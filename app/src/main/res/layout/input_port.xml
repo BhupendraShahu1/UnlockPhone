@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="connect to adb server to run commands" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="5"
+            android:hint="@string/port_hint"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="6"
+            android:hint="@string/code_hint"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnSetUpConnection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="connect" />
+    </LinearLayout>
+</layout>
